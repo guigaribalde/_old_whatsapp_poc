@@ -1,0 +1,33 @@
+{
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "error",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "parserOptions": {
+        "project": [
+          "./tsconfig.json"
+        ]
+      }
+    }
+  ]
+}
